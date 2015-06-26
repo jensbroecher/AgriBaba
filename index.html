@@ -8,6 +8,16 @@
 <script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="logic.js"></script>
 
+<script type="text/javascript">
+$( document ).ready(function() {
+
+setTimeout(function(){
+document.getElementById("startmenu").style.display = "block";
+document.getElementById("startmenu").className = "nicewindow animated fadeIn";
+}, 1500);
+});
+</script>
+
 
 </head>
 
@@ -17,10 +27,21 @@
 <img src="282.gif">
 </div>
 
-<div style="margin-top:15%;" class="animated fadeIn">
+<div style="margin-top:10px;" class="animated fadeIn">
 <img src="logo.png" name="logo" id="logo">
+</div>
 
-<button style="margin-top:5%;" onclick="letsgo();">Start</button>
+<div id="startmenu" class="nicewindow" style="display:none;">
+
+<h1>I am new to AgriBaba</h1>
+
+<div class="windowbutton" onClick="letsgo();">Register</div>
+
+<h1>I already have an account</h1>
+
+<div class="windowbutton">Login</div>
+
+<br>
 
 </div>
 
