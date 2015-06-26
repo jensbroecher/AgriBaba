@@ -170,12 +170,13 @@ button {
 	margin-left: auto;
 	font-weight: normal;
 	font-size: 14px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	padding-top: 7px;
 	padding-bottom: 7px;
 	transition: all 0.6s;
 	cursor: pointer;
+	text-transform: uppercase;
 }
 .nicewindow .windowbutton:hover {
 	box-shadow: 2px 2px 16px -1px rgba(0,0,0,0.63);
@@ -183,10 +184,12 @@ button {
 	transition: all 0.6s;
 }
 .nicewindow h1 {
-	font-weight: normal;
-	font-size: 18px;
+	font-weight: bold;
+	font-size: 15px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: #3F7345;
 }
 
 button:active {
