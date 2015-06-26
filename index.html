@@ -5,21 +5,22 @@
 <link href="main.css" rel="stylesheet" type="text/css">
 <link href="animate.min.css" rel="stylesheet" type="text/css">
 
-<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="logic.js"></script>
+
 
 </head>
 
-<body onLoad="playAudio('http://enunua.com/gormahia/kogalo.mp3');plswait();">
+<body>
 
-<div id="loadingindicator" style="display:none">
-<img src="burnball.gif" width="40%">
+<div id="loadingindicator">
+<img src="282.gif">
 </div>
 
-<div style="margin-top:5%;" class="animated fadeIn">
+<div style="margin-top:15%;" class="animated fadeIn">
 <img src="logo.png" name="logo" id="logo">
 
-
-<button style="margin-top:5%; onclick="localStorage.setItem('lang','eng');letsgo();">Start</button>
+<button style="margin-top:5%;" onclick="letsgo();">Start</button>
 
 </div>
 

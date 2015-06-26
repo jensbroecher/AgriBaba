@@ -13,11 +13,9 @@ setTimeout(function(){
 function letsgo() {
 	showindicator();
 	setTimeout(function(){
-	document.location.href = 'check.html';
-	}, 2000);
+	document.location.href = 'mainmenu.html';
+	}, 1500);
 }
-
-document.addEventListener("deviceready", onDeviceReady, false);
 
 $( document ).ready(function() {
 

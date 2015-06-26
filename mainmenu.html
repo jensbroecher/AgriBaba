@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="main.css" rel="stylesheet" type="text/css">
+<link href="animate.min.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="logic.js"></script>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+setTimeout(function(){
+document.getElementById("loadingindicator").className = "animated fadeOut";
+}, 1000);
+setTimeout(function(){
+	document.getElementById("loadingindicator").style.display = "none";
+}, 2000);
+
+setTimeout(function(){
+document.getElementById("mainmenu").style.display = "block";
+document.getElementById("mainmenu").className = "nicewindow animated fadeIn";
+}, 2500);
+});
+</script>
+
+</head>
+
+<body>
+
+<div id="loadingindicator" style="display:block;">
+<img src="282.gif">
+</div>
+
+<div id="mainmenu" class="nicewindow" style="display:none;">
+
+<h1>I am new to AgriBaba</h1>
+
+<div class="windowbutton">Register</div>
+
+<h1>I already have an account</h1>
+
+<div class="windowbutton">Login</div>
+
+<br>
+
+</div>
+
+<div id="fans"></div>
+
+</body>
+</html>
