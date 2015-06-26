@@ -160,8 +160,14 @@ button {
 	margin-left: 5%;
 	box-shadow: 3px 6px 53px -4px rgba(0,0,0,0.63);
 	padding: 5%;
+	
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+	
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
-
 .nicewindow .windowbutton {
 	box-shadow: 2px 2px 6px -1px rgba(0,0,0,0.63);
 	background-color: rgba(255,255,255,0.6);
