@@ -19,7 +19,7 @@ setTimeout(function(){
 
 setTimeout(function(){
 document.getElementById("mainmenu").style.display = "block";
-document.getElementById("mainmenu").className = "nicewindow animated fadeIn";
+document.getElementById("mainmenu").className = "nicewindow animated zoomIn";
 }, 2500);
 });
 </script>
@@ -34,19 +34,30 @@ document.getElementById("mainmenu").className = "nicewindow animated fadeIn";
 
 <div id="mainmenu" class="nicewindow" style="display:none;">
 
-<h1>Register as a</h1>
+<div id="loginscreenstart">
+<h1>Welcome back</h1>
 
-<div class="windowbutton">Producer / Farmer</div>
+<input id="loginemail" class="textfield" type="email" placeholder="E-Mail">
 
-<div class="windowbutton">Transporter</div>
+<input id="loginpin" style="width:100px;" class="textfield" type="number" placeholder="PIN">
 
-<div class="windowbutton">Buyer / Wholeseller</div>
+<div class="windowbutton" onClick="logincheck();">Go</div>
 
-<div class="windowbutton">Farm Supplier</div>
+<div class="windowbutton" onClick="loginforgot();">Forgot PIN?</div>
+</div>
 
-<div class="windowbutton">Consultant</div>
+<div id="loginscreenforgot" style="display:none;">
+<h1>Please enter your E-Mail</h1>
 
-<div class="windowbutton">Government / NGO</div>
+<div class="instructions">You will recieve an E-Mail with instructions.</div>
+
+<input id="loginemailforgot" class="textfield" type="email" placeholder="E-Mail">
+
+<div class="windowbutton" onClick="loginforgotgo();">Go</div>
+
+<div class="windowbutton" onClick="loginforgotcancel();">Cancel</div>
+
+</div>
 
 <br>
 

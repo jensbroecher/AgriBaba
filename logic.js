@@ -16,6 +16,22 @@ function letsgo() {
 	document.location.href = 'mainmenu.html';
 	}, 1500);
 }
+function logingo() {
+	showindicator();
+	setTimeout(function(){
+	document.location.href = 'login.html';
+	}, 1500);
+}
+function loginforgot() {
+	document.getElementById("loginscreenstart").style.display = "none";
+	document.getElementById("loginscreenforgot").style.display = "block";
+	document.getElementById("loginscreenforgot").className = "animated fadeIn";
+}
+function loginforgotcancel() {
+	document.getElementById("loginscreenstart").style.display = "block";
+	document.getElementById("loginscreenforgot").style.display = "none";
+	document.getElementById("loginscreenstart").className = "animated fadeIn";
+}
 
 $( document ).ready(function() {
 
@@ -80,4 +96,10 @@ var first_name = document.getElementById('first_name').value;
 
 document.location.href='http://enunua.com/gormahia/fan_number.php?pin_en='+pin_en+'&city_en='+city_en+'&gender_en='+gender_en+'&phone_en='+phone_en+'&email_en='+email_en+'&age_en='+age_en+'&last_name_en='+last_name_en+'&first_name_en='+first_name_en+'&lat='+lat+'&long='+long+'&amount='+amount+'';
 
+}
+
+function logincheck() {
+	var loginemail = document.getElementById('loginemail').value;
+	var loginpin = document.getElementById('loginpin').value;
+	alert(''+loginemail+' '+loginpin+'');
 }

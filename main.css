@@ -22,12 +22,21 @@ select {
 	display:none;	
 }
 .textfield {
-	border: 1px solid #999;
 	width: 100%;
-	margin-top: 10px;
 	font-size: 14px;
 	line-height: 200%;
 	text-indent: 5px;
+	margin-bottom: 10px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	color: #000;
+	background-color: #AAD26F;
 }
 #logo {
 	width: 80%;
@@ -46,6 +55,16 @@ select {
 	bottom: 0px;
 	z-index: -1;
 }
+.instructions {
+	font-size: 14px;
+	background-color: #666;
+	color: #FFF;
+	width: 100%;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 #contribution {
 	background-color: #000;
 	position: absolute;
@@ -191,9 +210,9 @@ button {
 }
 .nicewindow h1 {
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 14px;
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	text-transform: uppercase;
 	color: #3F7345;
 }
