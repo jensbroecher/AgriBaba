@@ -34,23 +34,59 @@ document.getElementById("mainmenu").className = "nicewindow animated fadeIn";
 
 <div id="mainmenu" class="nicewindow" style="display:none;">
 
-<h1>Register as a</h1>
+<h1>Register</h1>
 
-<div class="windowbutton">Producer / Farmer</div>
+<div class="windowbutton" onclick="localStorage.setItem('submenutyoe','producers');registermenu();">Producers</div>
 
-<div class="windowbutton">Transporter</div>
+<div class="windowbutton" onclick="localStorage.setItem('submenutyoe','buyers');registermenu();">Buyers</div>
 
-<div class="windowbutton">Buyer / Wholeseller</div>
+<div class="windowbutton" onclick="localStorage.setItem('submenutyoe','transporters');registermenu();">Transporters</div>
 
-<div class="windowbutton">Farm Supplier</div>
+<div class="windowbutton" onclick="localStorage.setItem('submenutyoe','suppliers');registermenu();">Farm Inputs Supplier</div>
 
-<div class="windowbutton">Consultant</div>
+<div class="windowbutton" onclick="localStorage.setItem('submenutyoe','partners');registermenu();">Distribution Partners</div>
 
-<div class="windowbutton">Government / NGO</div>
+<div class="windowbutton">Knowledge Base</div>
 
 <br>
 
 </div>
+
+
+<div class="submenu animated fadeIn" id="sub_producers">
+<div class="heading_and_back"><div onclick="gobacktomain();" class="backarrow"></div>Producers</div>
+<div class="windowbutton">Farmers</div>
+<div class="windowbutton">Manufacturers</div>
+</div>
+
+<div class="submenu animated fadeIn" id="sub_partners">
+<div class="heading_and_back"><div onclick="gobacktomain();" class="backarrow"></div>Partners</div>
+<div class="windowbutton">Governments</div>
+<div class="windowbutton">Non-Governmental</div>
+</div>
+
+<div class="submenu animated fadeIn" id="sub_suppliers">
+<div class="heading_and_back"><div onclick="gobacktomain();" class="backarrow"></div>Suppliers</div>
+<div class="windowbutton">Fertilizers</div>
+<div class="windowbutton">Seeds</div>
+<div class="windowbutton">Machinery</div>
+<div class="windowbutton">Chemicals</div>
+</div>
+
+<div class="submenu animated fadeIn" id="sub_buyers">
+<div class="heading_and_back"><div onclick="gobacktomain();" class="backarrow"></div>Buyers</div>
+<div class="windowbutton">Wholesellers</div>
+<div class="windowbutton">Retailers</div>
+<div class="windowbutton">Home Consumers</div>
+</div>
+
+<div class="submenu animated fadeIn" id="sub_transporters">
+<div class="heading_and_back"><div onclick="gobacktomain();" class="backarrow"></div>Transporters</div>
+<div class="windowbutton">Local</div>
+<div class="windowbutton">Longhaul</div>
+<div class="windowbutton">Export</div>
+</div>
+
 
 <div id="fans"></div>
 

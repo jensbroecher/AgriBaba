@@ -103,3 +103,19 @@ function logincheck() {
 	var loginpin = document.getElementById('loginpin').value;
 	alert(''+loginemail+' '+loginpin+'');
 }
+
+function registermenu() {
+	document.getElementById("mainmenu").className = "nicewindow animated fadeOut";
+	setTimeout(function(){
+	document.getElementById("mainmenu").style.display = "none";
+}, 1000);
+	var submenutyoe = localStorage.getItem('submenutyoe');
+	document.getElementById('sub_'+submenutyoe+'').style.display = 'block';
+}
+
+function gobacktomain() {
+	var submenutyoe = localStorage.getItem('submenutyoe');
+	document.getElementById('sub_'+submenutyoe+'').style.display = 'none';
+	document.getElementById("mainmenu").style.display = "block";
+	document.getElementById("mainmenu").className = "nicewindow animated fadeIn";
+}
