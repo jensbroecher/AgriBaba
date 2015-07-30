@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.agribaba.app"
+        id          = "com.agora.app"
         versionCode = "1" 
         version     = "1.0.0" >
 
-    <name>AgriBaba</name>
+    <name>AGORA</name>
 
     <description>
 		East Africa's Agricultural Marketplace
     </description>
 
-    <author href="https://www.agribaba.com" email="info@agribaba.com">
-        AgriBaba Ltd.
+    <author href="https://www.agora.africa" email="info@agora.africa">
+        FrontierSignals Ltd.
     </author>
 	
 	<icon src="icon.png" />
